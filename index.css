@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  #35424a;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color:white;
+    margin:0% 15%; 
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    box-shadow: #ffff;
+    /* margin-top: 200px; */
+}
+
+.NavContents{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+   
+}
+.head{
+    border: 1px solid black;
+    background-color: #efeded;
+    /* position: fixed; */
+    z-index: 1000;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* margin-bottom: 1000px; */
+    width: 100%;
+    height: 150px;
+}
+.header{
+    font-size: 35px;
+    text-transform: uppercase;
+    margin: 10px;
+}
+.Navbar__Link a{
+    font-size: 25px;
+    color: black; 
+    text-transform: uppercase;
+    font-family: fantasy;
+}
+.Navbar__Link a:hover{
+    color: aqua;
+}
+.about,.goals,.MyProjects,.MyContact{
+    margin-top: 100px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:100px 30px;  
+
+}
+.AboutContents{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    width:100%;
+    gap: 20px; 
+    border: 2px solid black;
+    padding: 20px;
+    background-color: #ffff;
+    color: rgb(49, 49, 49);
+    text-align: start;
+    text-transform: initial;
+    font-size: 25px;
+    
+    /* justify-self: center;  
+    align-self: center; */
+}
+
+    .about h2,.goals h2{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 40px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-bottom: 10px;
+    }
+    a{
+        text-decoration: none;
+    }
+    .MyGoals{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px; 
+        padding: 10px;
+    }
+    .Goals{
+   border: 1px solid black;
+   text-align: start;
+    width:100%;
+    padding: 10px;
+    background-color: rgb(208, 241, 241);
+    }
+
+    .Goals p,li{
+        text-transform: capitalize;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .MyProjects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    }
+    .MyProjects img{
+        width: 100%;
+        padding: 0px 10px;
+    }
+    .Items {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .Items p{
+        padding: 5px;
+        text-align: center;
+        align-items: center;
+        text-transform: capitalize;
+        color: rgb(10, 10, 10);
+        font-size: 20px;
+    }
+    .MyContact{
+        /* margin-top: 50px; */
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-left: 10px;
+    }
+    .Items a{
+        color: rgb(0, 136, 255);
+    }
+    .MyContact p{
+        font-size: 20px;
+        font-family: cursive;
+        text-align: center;
+    }
+    .MeImage {
+        width: 200px;
+        height: 200px;
+        margin: 30px;
+        border: 2px solid  blue;
+        border-radius: 50%;
+    }
+    .MeImage img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    .links a{
+        font-size: 20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        width: 100%;
+        height: 100px;
+        background-color: #050505;
+        color: white;
+        text-transform: capitalize;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: fantasy;
+    }
+    @media screen and (max-width: 900px) {
+        .container{
+            width:100%;
+            font-size: 10px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .MyProjects, .MyGoals, .AboutContents{
+            display: grid;
+            grid-template-columns: 1fr;
+            font-size: 15px;
+            gap: 20px;
+        }
+        .Navbar__Link a{
+            font-size: 16px;
+        
+        }
+        .about h2,.goals h2{
+            font-size: 23px;
+        }
+
+        #Contact{
+            margin-top: 1000px;
+        }
+    }
